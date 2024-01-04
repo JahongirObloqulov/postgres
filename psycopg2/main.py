@@ -18,3 +18,8 @@ cursor.execute("""
         ('Jahongir', 'Obloqulov', 27)
 """)
 conn.commit()
+
+cursor.execute("""
+        ALTER TABLE student
+        ADD COLUMN gender int;
+""")

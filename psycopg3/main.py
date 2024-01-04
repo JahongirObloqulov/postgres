@@ -16,3 +16,9 @@ with psycopg.connect("dbname=dvdrental user=postgres password=123456") as conn:
             ('Saydullo', 'Xodiyev', 55)
     """)
     conn.commit()
+
+    conn.execute("""
+            ALTER TABLE student
+            ADD COLUMN gender int;
+    """)
+    conn.commit()
