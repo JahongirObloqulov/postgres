@@ -23,3 +23,4 @@ cursor.execute("""
         ALTER TABLE student
         ADD COLUMN gender int;
 """)
+conn.commit()
